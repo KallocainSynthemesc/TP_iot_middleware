@@ -32,7 +32,7 @@ org: IotOrg
 bucket: IoTBucket
 Humidity server is listening on http://localhost:8888
 Temperature server is listening on http://localhost:9999
- temperature code=40i,temperature=19i,threshold=0i 1672921736606132600
+ temperature code=40i,temperature=23.4,threshold=0 1672926922482912400
 WRITE FINISHED
 ```
 
