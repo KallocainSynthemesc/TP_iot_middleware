@@ -77,7 +77,7 @@ from(bucket: "IoTBucket")
 ```
 Humidity:
 ```
-from(bucket: "fdsafdsa")
+from(bucket: "IoTBucket")
     |> range(start: -1h)
     |> filter(fn: (r) => r._measurement == "humidity" and r._field == "humidity")
     |> yield(name: "_results")
