@@ -13,7 +13,6 @@ Here influxDB greets you with the first configuration of a Organization and defa
 furthermore we need to create a new API token. The token is also needed for grafana and the middleware application
 
 
-
 ## Run middleware
 execute the middleware with the following command
 ``` bash
@@ -83,4 +82,6 @@ from(bucket: "fdsafdsa")
     |> filter(fn: (r) => r._measurement == "humidity" and r._field == "humidity")
     |> yield(name: "_results")
 ```
+
+Thresholds can be added when editing the Dashboard view under the threshold tab. For teperature I chose 25° and for the humidity view I chose 80%. Those values are hardcoded. Since the sensors are sending thresholds as well it would be possible to dynamically determine the threshold via the values sent from the sensor. However I could not figure out how to make a flux query that could make a dynamic threshold based on the values sent from the sensor.
 
