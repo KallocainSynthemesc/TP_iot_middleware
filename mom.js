@@ -21,8 +21,8 @@ var writeApi = influxDB.getWriteApi(org, bucket);
 
 function createPoint(value, mode, threshold, code) {
   var point1 = new influxdb_client_1.Point(mode)
-    .intField(mode, value)
-    .intField("threshold", threshold)
+    .floatField(mode, value)
+    .floatField("threshold", threshold)
     .intField("code", code);
   return point1;
 }
