@@ -38,6 +38,11 @@ WRITE FINISHED
 
 This shows the parameters that you put into the application and that the middleware api is listening to the two endpoints. For security reasons I would not log those parameters for a real world application but since this is just a quick exercice to play around with grafana and influxDB security is neglected.
 
+## Modify sensors
+
+The Humidity ENDPOINT variable needs to be set to http://localhost:8888
+the Temperature ENDPOINT variable needs to be set to http://localhost:9999
+
 ## Run sensors
 
 This project is adapted to deal with sensor imput from the projet tp-iot. This project is provided by our professor and I have not found a github for it so I can't link it here :(
