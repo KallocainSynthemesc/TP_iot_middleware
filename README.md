@@ -3,12 +3,13 @@
 ## Run middleware
 execute the middleware with the following command
 ``` bash
-npm i
+npm install
 node mom.js --token="token_exemple" --org="org_example" --bucket="bucket_example" --url="url_example"
 ```
 here is an example with filled parameters:
+``` bash
 node mom.js --token="lN010kvvjDoUt_utxF004SIWiL-UjAMNFnxIOOeLKmGRPliYbq9HvmWUiAATPx1VqQ79H1mWb28jGYYQkMloEQ==" --org="IotOrg" --bucket="IoTBucket" --url="http://localhost:8086"
-
+```
 When sucessfully executed you should see the following lines on your console:
 
 ``` bash
