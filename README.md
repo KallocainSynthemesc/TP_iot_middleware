@@ -42,15 +42,17 @@ Thanks to the middleware application data is now sent from the sensors to the in
 ### The flux query used to fetch the two diagrams are the following:
 Temperature:
 
+```
 from(bucket: "IoTBucket")
     |> range(start: -1h)
     |> filter(fn: (r) => r._measurement == "temperature" and r._field == "temperature")
     |> yield(name: "_results")
-	
+```
 Humidity:
+```
 from(bucket: "fdsafdsa")
     |> range(start: -1h)
     |> filter(fn: (r) => r._measurement == "humidity" and r._field == "humidity")
     |> yield(name: "_results")
-	
+```
 
