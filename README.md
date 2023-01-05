@@ -1,5 +1,19 @@
 # TP_iot_middleware
 
+## Run influxDB
+
+Navigate to where you downloaded indluxDB and execute the following command in a powershell or CMD
+``` bash
+influxd.exe
+```
+after that influxDB should be available on http://localhost:8086
+
+Here influxDB greets you with the first configuration of a Organization and default bucket. Configurations made here are later neccessary for running the middleware application and connecting influxDB with grafana
+
+furthermore we need to create a new API token. The token is also needed for grafana and the middleware application
+
+
+
 ## Run middleware
 execute the middleware with the following command
 ``` bash
@@ -34,6 +48,19 @@ In order to start sensors, run the following commands :
 npm i
 npm run sensors
 ```
+
+## Run grafana
+
+If not already installed, install grafana and verify that in services the grafana servive is running.
+After that grafana should be available on http://localhost:3000
+
+## configure grafana
+
+We need to link the influxDB datasource in grafana. To do so we go to:
+Data Sources -> Add data source -> select InfluxDB
+
+There we specify the URL, token, Organization, default bucket and test the connection.
+
 
 ## Expected behaviour
 
