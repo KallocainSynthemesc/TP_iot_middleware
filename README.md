@@ -36,7 +36,7 @@ Temperature server is listening on http://localhost:9999
 WRITE FINISHED
 ```
 
-This just shows the parameters that you put into the application. For security reasons I would not log those parameters for a real world application but since this is just a quick exercice to play around with grafana and influxDB security is neglected.
+This shows the parameters that you put into the application and that the middleware api is listening to the two endpoints. For security reasons I would not log those parameters for a real world application but since this is just a quick exercice to play around with grafana and influxDB security is neglected.
 
 ## Run sensors
 
